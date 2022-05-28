@@ -1,2 +1,49 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container">
+  <div class="card">
+    <h1>Hello, je suis Barbara 😀</h1>
+    <div>
+      <%= image_tag "BC.jpg", class:"profile-picture", alt:"Barbara Calas" %>
+    </div>
+    <h2>Développeuse Web</h2>
+    <p>Après un cursus universitaire en Management du Sport, des expériences dans l'animation avec les jeunes et comme game master en escape game, j'ai choisi de changer de vie et d'apprendre à coder avec Le Wagon 💻! Je suis maintenant une développeuse web. Mes autres passions sont le football ⚽️, la musique 🎹 et les voyages 🛫.</p>
+    <a href="https://www.lewagon.com/fr/nice" target="_blank" class = "btn-violet">Le Wagon</a>
+  </div>
+
+  <%# <div class="card">
+    <h2>Suivez-moi</h2>
+    <ul class = "list-inline">
+      <li>
+        <a href="https://github.com/bcalas78" target="_blank">
+        <i class="fab fa-brands fa-github"></i></a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/barbara-calas-4a081433/" target="_blank">
+        <i class="fab fa-brands fa-linkedin"></i></a>
+      </li>
+      <li>
+        <a href="https://twitter.com/BarbaraCalas" target="_blank">
+        <i class = "fab fa-brands fa-twitter"></i></a>
+      </li>
+    </ul>
+  </div> %>
+  <div class="card">
+    <div class="card-category mb-4" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1560264280-88b68371db39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80)">
+      <%= link_to "Expériences professionnelles", experiences_path, class:"text-decoration-none" %>
+    </div>
+    <div class="card-category mb-4" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/uploads/141103282695035fa1380/95cdfeef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1130&q=80)">
+      <%= link_to "Compétences", competences_path, class:"text-decoration-none" %>
+    </div>
+    <div class="card-category mb-4" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=773&q=80)">
+      <%= link_to "Formations", formations_path, class:"text-decoration-none" %>
+    </div>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1588591795084-1770cb3be374?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80)">
+      <%= link_to "Centres d'intérêt", hobbies_path, class:"text-decoration-none" %>
+    </div>
+  </div>
+
+  <div class="card">
+    <div>
+      <%= link_to "Contact", contact_path, class:"text-decoration-none contact" %>
+    </div>
+  </div>
+</div>

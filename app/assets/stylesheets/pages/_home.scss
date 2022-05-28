@@ -1,1 +1,123 @@
 // Specific CSS for your home-page
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&family=Roboto:wght@300;400;700&family=Space+Mono&display=swap');
+
+.container {
+  width: 750px;
+  margin: 0 auto;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 750px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+body {
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color:#4f61a3;
+  font-size: 17px;
+  line-height: lighter;
+}
+
+h1, h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #575f7d;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1,6;
+}
+
+h2 {
+  color: #f3420c;
+  font-weight: 400;
+}
+
+.contact {
+  color: #f3420c;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.contact:hover {
+  color: #12044e;
+  text-decoration: none;
+}
+
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #12044e;
+  text-decoration: none;
+}
+
+.card {
+  background: white;
+  padding: 40px;
+  border: 1px;
+  border-radius: 5px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  margin: 20px 0px;
+  text-align: center;
+}
+
+.btn-violet {
+  background-color: #12044e;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 4px;
+}
+
+.btn-violet:hover {
+  color: white;
+  background-color:#691a4b;
+}
+
+p {
+  margin-bottom: 40px;
+}
+
+// .list-inline {
+//   list-style: none;
+//   padding-left: 0px;
+// }
+
+// .list-inline > li {
+//   display: inline-block;
+//   padding: 0px 10px;
+// }
+
+// li {
+//   font-size: 45px;
+// }
+
+// .text-white:hover {
+//   color: #691a4b;
+// }
