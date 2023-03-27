@@ -1,9 +1,21 @@
+@media (max-width: 2500px) {
+  .footer {
+    height: 60px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .footer {
+    height: 100px;
+  }
+}
+
 .footer {
   background: #d6d0d0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 60px;
   padding: 0px 50px;
   color: rgba(0,0,0,0.3);
 }
