@@ -1,25 +1,46 @@
 .container1 {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
   .container1 {
-    width: 960px;
+    max-width: 960px;
   }
 }
 
 @media (max-width: 720px) {
   /* For a screen < 720px, this CSS will be read */
   .container1 {
-    width: 500px;
+    max-width: 500px;
+  }
+
+  .card-product {
+    height: 150px;
   }
 }
 
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */
   .container1 {
-    width: 300px;
+    max-width: 380px;
+    overflow-x: hidden;
   }
+
+  .card-product {
+    height: 190px;
+  }
+}
+
+
+
+// .modal .fade ::before ::after {
+//   box-sizing: content-box;
+// }
+
+
+
+*, *::before, *::after {
+  box-sizing: content-box;
 }
